@@ -115,6 +115,11 @@ routers.post('/signin',async (req,res)=>{
       console.log(`hello mt About`);
       res.status(200).send(req.rootUser);
   });
+  routers.get('/aboutme' ,async (req,res)=>
+  {
+    return res.status(400).json({error:"Plz Fill the data"})
+  });
+  
 
   
 
