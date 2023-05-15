@@ -12,7 +12,7 @@ const path = require('path');
 
 app.use(express.json());
 //const User = require('./model/userSchema');
-
+app.use(require('./routers/auth'));
 const PORT = process.env.PORT||5000;
 if(process.env.NODE_ENV=="production"){
     app.use(express.static(path.join(__dirname,"./client/build")));
@@ -21,7 +21,7 @@ if(process.env.NODE_ENV=="production"){
 })
 }
     
-app.use(require('./routers/auth'));
+
 
 
 console.log("hello Anurag");
