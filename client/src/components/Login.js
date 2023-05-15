@@ -13,7 +13,7 @@ function Login() {
 
       
 
-      const res=await fetch("https://testcompeto.onrender.com/signin",{
+      const res=await fetch("/signin",{
 
           method: "POST",
           headers: {
