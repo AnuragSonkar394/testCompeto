@@ -13,10 +13,7 @@ const User = require("../model/userSchema");
 
 routers.use(cookieParser());
 
-routers.get('/',(req,res)=>{
-    res.send(`Hello WOrld from the server router`);
 
-});
 
    
   //  console.log( req.body);
